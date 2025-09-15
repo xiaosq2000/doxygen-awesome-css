@@ -4,3 +4,4 @@ docs/html
 
 node_modules
 *.tgz
+.aider*

@@ -1,0 +1,174 @@
+/**
+ * Rose Pine theme customization for doxygen-awesome-css
+ *
+ * This file implements the Rose Pine color scheme with custom typography for doxygen-awesome-css following the recommended customization approach.
+ *
+ * See https://github.com/jothepro/doxygen-awesome-css/blob/main/docs/customization.md
+ *
+ * Usage: Add to your Doxyfile:
+ * HTML_EXTRA_STYLESHEET = doxygen-awesome.css custom.css
+ */
+
+html {
+    /* ========================================
+     * Rose Pine Dawn (Light Mode) Color Palette
+     * ======================================== */
+    --rose-pine-base: #faf4ed;
+    --rose-pine-surface: #fffaf3;
+    --rose-pine-overlay: #f2e9e1;
+    --rose-pine-muted: #9893a5;
+    --rose-pine-subtle: #797593;
+    --rose-pine-text: #575279;
+    --rose-pine-love: #b4637a;
+    --rose-pine-gold: #ea9d34;
+    --rose-pine-rose: #d7827e;
+    --rose-pine-pine: #286983;
+    --rose-pine-foam: #56949f;
+    --rose-pine-iris: #907aa9;
+    --rose-pine-highlight-low: #f4ede8;
+    --rose-pine-highlight-med: #dfdad9;
+    --rose-pine-highlight-high: #cecacd;
+
+    /* ========================================
+     * Typography
+     * ======================================== */
+    --font-family: "TeX Gyre Pagella", Georgia, "Times New Roman", "Liberation Serif", "Nimbus Roman", "DejaVu Serif", "Century Schoolbook", Times, serif;
+    --font-family-monospace: "Fira Code", "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", "Liberation Mono", "DejaVu Sans Mono", Consolas, "Courier New", monospace;
+
+    /* ========================================
+     * Doxygen Theme Variables (mapped to Rose Pine)
+     * ======================================== */
+    /* Primary colors */
+    --primary-color: var(--rose-pine-rose);
+    --primary-dark-color: var(--rose-pine-love);
+    --primary-light-color: var(--rose-pine-rose);
+    --on-primary-color: var(--rose-pine-base);
+
+    /* Page base colors */
+    --page-background-color: var(--rose-pine-base);
+    --page-foreground-color: var(--rose-pine-text);
+    --page-secondary-foreground-color: var(--rose-pine-subtle);
+
+    /* Layout colors */
+    --separator-color: var(--rose-pine-overlay);
+    --odd-color: var(--rose-pine-highlight-low);
+    --tablehead-background: var(--rose-pine-overlay);
+    --menu-selected-background: var(--rose-pine-overlay);
+    --side-nav-background: var(--rose-pine-surface);
+
+    /* Content box colors */
+    --warning-color: var(--rose-pine-highlight-low);
+    --warning-color-dark: var(--rose-pine-gold);
+    --warning-color-darker: var(--rose-pine-text);
+    --note-color: var(--rose-pine-highlight-low);
+    --note-color-dark: var(--rose-pine-foam);
+    --note-color-darker: var(--rose-pine-text);
+    --todo-color: var(--rose-pine-highlight-low);
+    --todo-color-dark: var(--rose-pine-rose);
+    --todo-color-darker: var(--rose-pine-text);
+    --deprecated-color: var(--rose-pine-highlight-low);
+    --deprecated-color-dark: var(--rose-pine-muted);
+    --deprecated-color-darker: var(--rose-pine-text);
+    --bug-color: var(--rose-pine-highlight-low);
+    --bug-color-dark: var(--rose-pine-love);
+    --bug-color-darker: var(--rose-pine-text);
+    --invariant-color: var(--rose-pine-highlight-low);
+    --invariant-color-dark: var(--rose-pine-pine);
+    --invariant-color-darker: var(--rose-pine-text);
+
+    /* Blockquote colors */
+    --blockquote-background: var(--rose-pine-surface);
+    --blockquote-foreground: var(--rose-pine-subtle);
+
+    /* Fragment (code block) colors */
+    --fragment-background: var(--rose-pine-surface);
+    --fragment-foreground: var(--rose-pine-text);
+    --fragment-keyword: var(--rose-pine-rose);
+    --fragment-keywordtype: var(--rose-pine-love);
+    --fragment-keywordflow: var(--rose-pine-gold);
+    --fragment-token: var(--rose-pine-foam);
+    --fragment-comment: var(--rose-pine-muted);
+    --fragment-link: var(--rose-pine-pine);
+    --fragment-preprocessor: var(--rose-pine-rose);
+    --fragment-linenumber-color: var(--rose-pine-subtle);
+    --fragment-linenumber-background: var(--rose-pine-overlay);
+    --fragment-linenumber-border: var(--rose-pine-base);
+}
+
+/* ========================================
+ * Rose Pine Main (Dark Mode) Color Palette
+ * ======================================== */
+html.dark-mode {
+    /* Rose Pine Main color palette */
+    --rose-pine-base: #191724;
+    --rose-pine-surface: #1f1d2e;
+    --rose-pine-overlay: #26233a;
+    --rose-pine-muted: #6e6a86;
+    --rose-pine-subtle: #908caa;
+    --rose-pine-text: #e0def4;
+    --rose-pine-love: #eb6f92;
+    --rose-pine-gold: #f6c177;
+    --rose-pine-rose: #ebbcba;
+    --rose-pine-pine: #31748f;
+    --rose-pine-foam: #9ccfd8;
+    --rose-pine-iris: #c4a7e7;
+    --rose-pine-highlight-low: #21202e;
+    --rose-pine-highlight-med: #403d52;
+    --rose-pine-highlight-high: #524f67;
+
+    /* Primary colors */
+    --primary-color: var(--rose-pine-rose);
+    --primary-dark-color: var(--rose-pine-love);
+    --primary-light-color: var(--rose-pine-foam);
+    --on-primary-color: var(--rose-pine-base);
+
+    /* Page base colors */
+    --page-background-color: var(--rose-pine-base);
+    --page-foreground-color: var(--rose-pine-text);
+    --page-secondary-foreground-color: var(--rose-pine-subtle);
+
+    /* Layout colors */
+    --separator-color: var(--rose-pine-overlay);
+    --odd-color: var(--rose-pine-highlight-low);
+    --tablehead-background: var(--rose-pine-overlay);
+    --menu-selected-background: var(--rose-pine-overlay);
+    --side-nav-background: var(--rose-pine-surface);
+
+    /* Content box colors */
+    --warning-color: var(--rose-pine-highlight-low);
+    --warning-color-dark: var(--rose-pine-gold);
+    --warning-color-darker: var(--rose-pine-text);
+    --note-color: var(--rose-pine-highlight-low);
+    --note-color-dark: var(--rose-pine-foam);
+    --note-color-darker: var(--rose-pine-text);
+    --todo-color: var(--rose-pine-highlight-low);
+    --todo-color-dark: var(--rose-pine-rose);
+    --todo-color-darker: var(--rose-pine-text);
+    --deprecated-color: var(--rose-pine-highlight-low);
+    --deprecated-color-dark: var(--rose-pine-muted);
+    --deprecated-color-darker: var(--rose-pine-text);
+    --bug-color: var(--rose-pine-highlight-low);
+    --bug-color-dark: var(--rose-pine-love);
+    --bug-color-darker: var(--rose-pine-text);
+    --invariant-color: var(--rose-pine-highlight-low);
+    --invariant-color-dark: var(--rose-pine-pine);
+    --invariant-color-darker: var(--rose-pine-text);
+
+    /* Blockquote colors */
+    --blockquote-background: var(--rose-pine-surface);
+    --blockquote-foreground: var(--rose-pine-subtle);
+
+    /* Fragment (code block) colors */
+    --fragment-background: var(--rose-pine-surface);
+    --fragment-foreground: var(--rose-pine-text);
+    --fragment-keyword: var(--rose-pine-rose);
+    --fragment-keywordtype: var(--rose-pine-love);
+    --fragment-keywordflow: var(--rose-pine-gold);
+    --fragment-token: var(--rose-pine-foam);
+    --fragment-comment: var(--rose-pine-muted);
+    --fragment-link: var(--rose-pine-pine);
+    --fragment-preprocessor: var(--rose-pine-rose);
+    --fragment-linenumber-color: var(--rose-pine-subtle);
+    --fragment-linenumber-background: var(--rose-pine-overlay);
+    --fragment-linenumber-border: var(--rose-pine-base);
+}
